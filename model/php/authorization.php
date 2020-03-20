@@ -3,5 +3,5 @@
 
     $_SESSION['username'] = $_REQUEST['username'];
 
-    header('Location: ./../../../index.php');
+    header('Location: ../../index.php');
 ?>

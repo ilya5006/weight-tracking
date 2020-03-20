@@ -50,5 +50,5 @@
         }
     }
 
-    $db = Database::init('localhost', 'root', '', 'project-analysis');
+    $db = Database::init('localhost', 'root', '', 'weight-tracking');
 ?>
