@@ -30,7 +30,6 @@ var graph = new CanvasJS.Chart("graph", {
 	}]
 });
 graph.render();
- 
 }
 </script>
 </head>

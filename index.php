@@ -19,7 +19,7 @@ if (empty($_SESSION['username'])) header('Location: ./authorization.php');
 </head>
 
 <body>
-    <a href="./model/php/logout.php">Выйти</a>
+    <a href="./model/php/logout.php" id="logout">Выйти</a>
 
     <?php
     if (isset($_GET['username']))
@@ -38,6 +38,7 @@ if (empty($_SESSION['username'])) header('Location: ./authorization.php');
     ?>
 
     <script src="./model/js/graph.js"></script>
+    <script src="./model/js/main.js"></script>
 </body>
 
 </html>

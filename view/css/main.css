@@ -8,6 +8,21 @@
 
 }
 
+#users
+{
+    display: flex;
+    flex-direction: row;
+    background-color: #C4C4C4;
+}
+
+.user
+{
+    text-decoration: none;
+    display: block;
+    background-color: #8C8B8B;
+    color: #000000;
+}
+
 body
 {
     display: flex;
