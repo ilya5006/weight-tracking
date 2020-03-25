@@ -19,14 +19,16 @@ if (empty($_SESSION['username'])) header('Location: ./authorization.php');
 </head>
 
 <body>
-    <a href="./model/php/logout.php" id="logout">Выйти</a>
+    <div id="buttons">
+        <a href="./model/php/logout.php" id="logout">Выйти</a>
 
-    <?php
-    if (isset($_GET['username']))
-    {
-        echo '<a href="index.php">Вернуться домой</a>';
-    }
-    ?>
+        <?php
+        if (isset($_GET['username']))
+        {
+            echo '<a href="index.php">Вернуться домой</a>';
+        }
+        ?>
+    </div>
     <?php require './view/users-div.html'; ?>
     <?php require './view/graph.html'; ?>
 

@@ -3,11 +3,13 @@
 
     SESSION_START();
 
-    $choseUser = isset($_REQUEST['username']) ? $db->escapeString($_REQUEST['username']) : $_SESSION['username'];
+    $choseUser = isset($_REQUEST['username']) ? $db->escapeString($_REQUEST['username']) : $db->escapeString($_SESSION['username']);
+
+    $currentUser = $db->escapeString($_SESSION['username']);
 
     $usersInfo = [];
 
-    $usernames = $db->queryAll("SELECT DISTINCT `username` FROM `weights` WHERE username != '$choseUser'");
+    $usernames = $db->queryAll("SELECT DISTINCT `username` FROM `weights` WHERE `username` != '$choseUser' AND `username` != '$currentUser'");
 
     foreach ($usernames as $username)
     {

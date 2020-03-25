@@ -1,9 +1,7 @@
 function showUserssNameAndWeight()
 {
     let usersDiv = document.querySelector('#users');
-    let otherUsersP = '<p>Другие пользователи:</p>';
     usersDiv.innerHTML = '';
-    usersDiv.insertAdjacentHTML('beforeEnd', otherUsersP);
 
     let username = window.location.href.split('?username=')[1];
 
