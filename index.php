@@ -15,7 +15,7 @@ if (empty($_SESSION['username'])) header('Location: ./authorization.php');
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
-    <title>Document</title>
+    <title>Weight-Tracking</title>
 </head>
 
 <body>
