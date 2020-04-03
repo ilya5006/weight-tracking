@@ -1,4 +1,4 @@
-function showUserssNameAndWeight()
+function showUsersNameAndWeight()
 {
     let usersDiv = document.querySelector('#users');
     usersDiv.innerHTML = '';
@@ -61,12 +61,12 @@ function findAndShowWeightInfo()
             },
             data: [{
                 type: "line",
-                dataPoints: weightInfo// json $dataPoints
+                dataPoints: weightInfo
             }]
         });
         graph.render();
     });
 }
 
-showUserssNameAndWeight();
+showUsersNameAndWeight();
 findAndShowWeightInfo();
