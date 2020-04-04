@@ -68,5 +68,16 @@ function findAndShowWeightInfo()
     });
 }
 
+function inputCheck(event)
+{
+    if (event.target.value[event.target.value.length - 1] != '.')
+    {
+        event.target.value = Math.abs(parseFloat(event.target.value));
+        if (event.target.value == 'NaN') event.target.value = '';
+    }
+}
+
 showUsersNameAndWeight();
 findAndShowWeightInfo();
+
+document.querySelector('#push-new-weight input[name=weight]').addEventListener('input', inputCheck);
